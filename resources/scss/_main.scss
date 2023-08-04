@@ -1,4 +1,114 @@
 @use 'vars' as *;
 main{
-  height: 80vh;
+ 
+
+  section {
+    min-height: 100px;
+  }
+  
+  .jumbo-background {
+    height: 250px;
+    width: 100%;
+    background-image: url(../images/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .blue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+  
+    a {
+      background-color: $main-blue;
+      padding: 10px 40px;
+      border: 2px solid $main-blue;
+  
+      &:hover {
+        border: 2px solid white;
+      }
+    }
+  }
+  
+  .mid-section {
+    position: relative;
+    bottom: -208px;
+    left: -516px;
+  }
+  
+  .navbar {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .first-section {
+    background-color: $main-dark;
+    color: white;
+  }
+
+  .second-section {
+    background-color: $main-blue;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .navbar {
+    justify-content: space-evenly;
+  }
+  
+  .navbar img {
+    height: 50px;
+    padding: 10px;
+  }
+  
+  .background {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .main-footer {
+    display: flex;
+    gap: 20px;
+    color: white;
+    min-height: 200px;
+    padding: 50px 0;
+  }
+  
+  .main-footer ul {
+    margin: 15px;
+  
+    li {
+      font-size: 12px;
+      font-weight: 300;
+      padding: 2px 0;
+      color: gainsboro;
+  
+      &:hover {
+        color: $main-blue;
+      }
+    }
+  
+  }
+  
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 }
