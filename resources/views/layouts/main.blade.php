@@ -15,7 +15,10 @@
     {{-- Header --}}
     @include('includes.header')
     <main>
+        {{-- spazio per il contenuto variabile di Main --}}
         @yield('main-content')
+        {{-- parte inferiore del Main che rimane invariata --}}
+        @include('includes.links')
     </main>
     {{-- Footer --}}
     @include('includes.footer')
