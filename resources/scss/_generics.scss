@@ -1,0 +1,24 @@
+@use 'vars' as *;
+body {
+  font-family: $main-font;
+}
+
+/* immagine fluida */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
