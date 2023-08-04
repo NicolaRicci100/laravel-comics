@@ -9,7 +9,15 @@
         </div>
         <div class="container content">
             <div class="card-container">
-                <div class="card">
+                @foreach ($comics as $comic)
+                    <div class="card">
+                        <figure>
+                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                        </figure>
+                        <div>{{ $comic['title'] }}</div>
+                    </div>
+                @endforeach
+                {{-- <div class="card">
                     <figure>
                         <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="placeholder">
                     </figure>
@@ -74,13 +82,7 @@
                         <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="placeholder">
                     </figure>
                     <div>titolo placheolder</div>
-                </div>
-                <div class="card">
-                    <figure>
-                        <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="placeholder">
-                    </figure>
-                    <div>titolo placheolder</div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="blue-button">
