@@ -1,0 +1,39 @@
+@use 'vars' as *;
+footer {
+  height: 10vh;
+  background-color: $main-dark;
+  color: $main-blue;
+  .sign {
+    border: 2px solid $main-blue;
+    padding: 10px;
+
+    &:hover {
+      border: 2px solid white;
+      cursor: pointer;
+
+      a {
+        color: $main-blue;
+      }
+    }
+  }
+
+  a {
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
+  section {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 15px;
+  }
+}
