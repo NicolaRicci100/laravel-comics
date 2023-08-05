@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ env('APP_NAME') }} | @yield('title')</title>
     <link rel="icon" href="{{ Vite::asset('resources/images/dc-logo.png') }}" type="images/png">
+    {{-- per visualizzare la pagina senza caricamenti in tandem con il diplay: block in app.scss --}}
+    <style>
+        body {
+            display: none
+        }
+    </style>
     {{-- importo gli assets --}}
     @vite('resources/js/app.js')
 </head>

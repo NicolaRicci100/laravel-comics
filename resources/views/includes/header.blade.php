@@ -10,7 +10,8 @@
         <ul>
             @foreach ($links as $link)
                 <li>
-                    <a href="#">{{ $link['text'] }}</a>
+                    <a @if (Route::is($link['route'])) class="active" @endif
+                        href="{{ route($link['route']) }}">{{ $link['text'] }}</a>
                 </li>
             @endforeach
         </ul>

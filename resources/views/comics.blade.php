@@ -1,4 +1,3 @@
-{{-- MOMENTANEAMENTE IDENTICA ALLA PAGINA COMICS --}}
 @extends('layouts.main')
 @section('title', 'Home')
 @section('main-content')

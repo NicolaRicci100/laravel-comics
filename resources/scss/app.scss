@@ -6,3 +6,8 @@
 @use 'main';
 @use 'cards';
 @use 'footer';
+
+// per visualizzare la pagina senza caricamenti in tandem con il diplay: none in main.blade.php --}}
+body{
+  display: block;
+}
