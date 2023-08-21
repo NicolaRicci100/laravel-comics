@@ -13,10 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// temoraenamente la home mostra i comics
 Route::get('/', function () {
     $comics = config('comics');
     return view('home', compact('comics'));
 })->name('home');
+
+Route::get('/comics', function () {
+    $comics = config('comics');
+    return view('comics', compact('comics'));
+})->name('comics');
+
+Route::get('/comic', function () {
+    $comics = config('comics');
+    $comic = $comics[0];
+    return view('comic', compact('comic'));
+});
+
+
+
 
 Route::get('/characters', function () {
     return view('characters');
@@ -25,11 +41,6 @@ Route::get('/characters', function () {
 Route::get('/collectibles', function () {
     return view('collectibles');
 })->name('collectibles');
-
-Route::get('/comics', function () {
-    $comics = config('comics');
-    return view('comics', compact('comics'));
-})->name('comics');
 
 Route::get('/fans', function () {
     return view('fans');

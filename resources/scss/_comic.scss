@@ -1,0 +1,30 @@
+@use 'vars' as *;
+#single-comic{
+  .large-jumbo {
+    height: 340px;
+    width: 100%;
+    background-image: url(../images/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 60px solid $main-blue;
+
+    .figure-comic{
+      height: 240px;
+      width: 150px;
+      margin: 10px 0 10px;
+      position: relative;
+      bottom: -80px;
+      left: 300px;
+
+      img {
+        object-fit: cover;
+        display: block;
+        min-height: 240px;
+        width: 100%;
+        object-position: 50% 50%;
+        border: 1px solid white;
+      }
+    }
+  }
+}
