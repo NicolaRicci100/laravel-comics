@@ -15,7 +15,25 @@
       margin: 10px 0 10px;
       position: relative;
       bottom: -80px;
-      left: 300px;
+      left: 25%;
+      .comic-label{
+        position: absolute;
+        background-color: $secondary-blue;
+        color: white;
+        text-transform: uppercase;
+        margin: 1px;
+        padding: 2px;
+        font-size: 10px;
+        left: 0;
+      }
+      .label-top{
+        top: 0;
+      }
+      .label-down{
+        bottom: 0;
+        right: 0;
+        text-align: center;
+      }
 
       img {
         object-fit: cover;
