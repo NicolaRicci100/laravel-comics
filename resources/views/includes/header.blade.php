@@ -4,9 +4,11 @@
 
 <header>
     <nav class="container">
-        <figure>
-            <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="Logo DC">
-        </figure>
+        <a href="{{ route('home') }}">
+            <figure>
+                <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="Logo DC">
+            </figure>
+        </a>
         <ul>
             @foreach ($links as $link)
                 <li>
