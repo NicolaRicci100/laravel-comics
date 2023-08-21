@@ -29,8 +29,39 @@
                 </figure>
             </div>
         </div>
-        <div class="comic-credits">
-
+        <div class="credits">
+            <div class="comic-credits">
+                <table id="talent">
+                    <tr>
+                        <th>Talent</th>
+                    </tr>
+                    <tr>
+                        <td>Art by:</td>
+                        {{-- <td>{{ $comic['artists'] }}</td> --}}
+                    </tr>
+                    <tr>
+                        <td>Written by:</td>
+                        {{-- <td>{{ $comic['writers'] }}</td> --}}
+                    </tr>
+                </table>
+                <table id="specs">
+                    <tr>
+                        <th>Specs</th>
+                    </tr>
+                    <tr>
+                        <td>Series:</td>
+                        <td>{{ $comic['series'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>U.S. Price:</td>
+                        <td>{{ $comic['price'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>On Sale Date:</td>
+                        <td>{{ $comic['sale_date'] }}</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
 @endsection
