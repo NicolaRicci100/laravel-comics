@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Home')
+@section('title', 'Comics')
 @section('main-content')
     <section class="first-section">
         <div class="jumbo-background">

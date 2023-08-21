@@ -29,3 +29,13 @@ a {
 .inline{
   display: inline;
 }
+
+// Placeholder per le pagine senza contenuto
+.jumbo-placeholder{
+    height: 800px;
+    width: 100%;
+    background-image: url(../images/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
