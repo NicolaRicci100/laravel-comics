@@ -37,11 +37,23 @@
                     </tr>
                     <tr>
                         <td>Art by:</td>
-                        {{-- <td>{{ $comic['artists'] }}</td> --}}
+                        <td>
+                            @foreach ($comic['artists'] as $artist)
+                                {{ $artist }}@if (!$loop->last)
+                                    ,
+                                @endif
+                            @endforeach
+                        </td>
                     </tr>
                     <tr>
                         <td>Written by:</td>
-                        {{-- <td>{{ $comic['writers'] }}</td> --}}
+                        <td>
+                            @foreach ($comic['writers'] as $writer)
+                                {{ $writer }}@if (!$loop->last)
+                                    ,
+                                @endif
+                            @endforeach
+                        </td>
                     </tr>
                 </table>
                 <table id="specs">
